@@ -1,0 +1,79 @@
+.projects {
+  background-color: black;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+  scroll-margin-top: 80px; /* Ajusta según la altura de tu header */
+}
+
+.project-card {
+  background-color: #333;
+  border-radius: 40px; /* Ajuste a 20px para evitar bordes demasiado redondos en móviles */
+  min-height: 250px; /* Altura mínima */
+  display: flex;
+  flex-direction: column; /* Organizar el contenido en columnas */
+  justify-content: space-between; /* Espacio entre los elementos internos */
+  margin-bottom: 20px; /* Espaciado entre las tarjetas */
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.slick-prev, .slick-next {
+  color: #fff; /* Cambiar el color de las flechas de navegación */
+}
+
+.slick-dots li button:before {
+  color: #fff; /* Cambiar el color de los puntos de navegación */
+}
+
+/* Responsivo para pantallas medianas */
+@media (max-width: 768px) {
+  .projects {
+    padding: 30px;
+  }
+
+  .project-card {
+    width: 90%; /* Hacer que la tarjeta ocupe el 90% del ancho disponible */
+    min-height: 250px; /* Ajustar la altura mínima en pantallas medianas */
+    margin: 20px auto; /* Centrar la tarjeta y darle margen vertical */
+  }
+
+  .project-card h3 {
+    font-size: 1.3rem; /* Reducir el tamaño del texto */
+  }
+
+  .project-card p {
+    font-size: 0.9rem; /* Reducir ligeramente el tamaño del texto */
+  }
+}
+
+/* Responsivo para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .projects {
+    padding: 15%; /* Reducir el padding en móviles */
+  }
+
+  .project-card {
+    width: 100%; /* Tarjeta ocupa todo el ancho de la pantalla */
+    min-height: 220px; /* Reducir la altura mínima en móviles */
+    padding: 1px; /* Reducir el padding interno de la tarjeta */
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem; /* Reducir el tamaño del título */
+  }
+
+  .project-card p {
+    font-size: 0.8rem; /* Reducir el tamaño del texto */
+  }
+}

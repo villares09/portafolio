@@ -1,0 +1,81 @@
+.skills {
+  background-color: black;
+  color: #fff;
+  padding: 50px;
+  scroll-margin-top: 40px; /* Ajusta según la altura de tu header */
+}
+
+.skills h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+/* Contenedor Flexbox centrado horizontalmente */
+.skills-container {
+  display: flex;
+  justify-content: center; /* Centramos las columnas horizontalmente */
+  align-items: flex-start; /* Alineamos las columnas hacia arriba */
+  flex-wrap: wrap;         /* Permitir que las columnas se apilen en pantallas pequeñas */
+  gap: 40px;               /* Espacio entre las columnas */
+  margin-top: 20px;        /* Separación entre el título y las columnas */
+}
+
+/* Columnas de habilidades */
+.skills-column {
+  flex: 1;
+  max-width: 400px;        /* Limitar el ancho máximo de cada columna */
+  min-width: 300px;        /* Asegura que las columnas tengan un tamaño mínimo */
+}
+
+.skills-column h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #f39c12;          /* Color resaltado para los subtítulos */
+}
+
+.skills-column ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.skills-column li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.skills-column li strong {
+  color: #f39c12;          /* Resaltar las categorías de habilidades */
+}
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 1024px) {
+  .skills h2 {
+    font-size: 2rem; /* Reducir el tamaño del título en pantallas medianas */
+  }
+  .skills-column {
+    max-width: 300px; /* Ajustar el ancho de las columnas en pantallas medianas */
+  }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column; /* Apilar las columnas verticalmente en pantallas pequeñas */
+    align-items: center;    /* Centrar las columnas en móviles */
+  }
+  
+  .skills-column {
+    max-width: 90%;  /* Ajustar el ancho de las columnas para que ocupen el 90% del ancho en móviles */
+    min-width: unset; /* Eliminar el ancho mínimo en móviles */
+  }
+
+  .skills-column h3 {
+    font-size: 1.5rem; /* Reducir el tamaño de los subtítulos */
+  }
+
+  .skills-column li {
+    font-size: 1rem; /* Reducir el tamaño del texto */
+  }
+}

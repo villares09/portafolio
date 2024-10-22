@@ -1,0 +1,70 @@
+.header {
+    position: fixed; /* Hacer que el header sea fijo */
+    top: 0; /* Posicionarlo en la parte superior */
+    left: 0; /* Alinear a la izquierda */
+    right: 0; /* Alinear a la derecha */
+    background-color: black; /* Color de fondo */
+    color: white; /* Color del texto */
+    display: flex; /* Usar flexbox para alinear elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centrar verticalmente */
+    padding: 15px 20px; /* Ajuste de padding */
+    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+  }
+  
+  .header h1 {
+    font-size: 24px; /* Tamaño del título */
+    margin: 0; /* Eliminar márgenes */
+  }
+  
+  nav {
+    display: flex;
+    gap: 15px; /* Espacio entre enlaces */
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media query para tablets y móviles */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column; /* Colapsar el layout a columnas */
+      align-items: center; /* Centrar el contenido */
+    }
+  
+    nav {
+      flex-direction: row; /* Alinear los enlaces verticalmente */
+    }
+  
+    nav a {
+      margin: 5px 0; /* Espaciado entre enlaces */
+      font-size: 16px; /* Tamaño más pequeño para los enlaces */
+    }
+  
+    .header h1 {
+      font-size: 20px; /* Reducir el tamaño del título */
+      margin-bottom: 10px; /* Separar el título del menú */
+    }
+  }
+  
+  /* Media query para pantallas muy pequeñas (smartphones) */
+  @media (max-width: 480px) {
+    .header {
+      padding: 10px; /* Reducir el padding */
+    }
+  
+    .header h1 {
+      font-size: 18px; /* Ajustar tamaño del título */
+    }
+  
+    nav a {
+      font-size: 14px; /* Reducir el tamaño de los enlaces */
+      margin: 3px 0; /* Reducir espacio entre los enlaces */
+    }
+  }

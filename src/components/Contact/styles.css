@@ -1,0 +1,68 @@
+.contact {
+  background-color: black;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact input,
+.contact textarea {
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 10px 20px;
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #e68a00;
+}
+
+/* Media query para pantallas más pequeñas (tablets y móviles) */
+@media (max-width: 768px) {
+  .contact {
+    padding: 18%;
+  }
+
+  .contact input,
+  .contact textarea {
+    width: 100%; /* Asegurar que los inputs ocupen todo el ancho disponible */
+    max-width: 90%;
+  }
+
+  .contact button {
+    width: 100%; /* Botón más ancho en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 20%;
+  }
+
+  .contact input,
+  .contact textarea {
+    width: 100%; /* Inputs al 100% del ancho de la pantalla */
+    padding: 8px; /* Padding más pequeño para pantallas muy pequeñas */
+  }
+
+  .contact button {
+    padding: 10px;
+    width: 100%; /* Botón al 100% */
+  }
+}

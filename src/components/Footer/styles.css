@@ -1,0 +1,61 @@
+.footer {
+    position: fixed; /* Posición fija */
+    bottom: 0; /* Pegado a la parte inferior */
+    left: 0;
+    right: 0;
+    background-color: #282c34; /* Fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  }
+  
+  .footer-content {
+    display: flex; /* Flex para alinear los elementos horizontalmente */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en caso de espacio insuficiente */
+  }
+  
+  .footer-content p {
+    margin: 0 15px; /* Espaciado horizontal entre los elementos */
+  }
+  
+  .footer-content a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
+  .footer-content a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media query para pantallas más pequeñas (tablets y móviles) */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 15px; /* Ajusta el padding para pantallas más pequeñas */
+    }
+  
+    .footer-content {
+      flex-direction: row; /* Cambia a columna para que los elementos se apilen verticalmente */
+      align-items: center; /* Centra los elementos verticalmente */
+    }
+  
+    .footer-content p {
+      margin: 10px 0; /* Espaciado vertical entre los elementos */
+    }
+  }
+  
+  /* Media query para pantallas muy pequeñas (móviles) */
+  @media (max-width: 480px) {
+    .footer {
+      padding: 7.5px; /* Padding más pequeño para dispositivos móviles */
+    }
+  
+    .footer-content p {
+      margin: 5px 0; /* Ajusta el margen para un diseño más compacto */
+      font-size: 14px; /* Texto más pequeño para pantallas pequeñas */
+    }
+  
+    .footer-content a {
+      font-size: 14px; /* Ajusta el tamaño de los enlaces para pantallas móviles */
+    }
+  }

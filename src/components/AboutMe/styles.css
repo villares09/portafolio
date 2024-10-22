@@ -1,0 +1,42 @@
+.about-me {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+  margin-top: 50px;
+  scroll-margin-top: 80px; /* Ajusta según la altura de tu header */
+}
+
+.about-me h2 {
+  margin-bottom: 20px;
+  font-size: 28px; /* Título principal */
+}
+
+.about-me p {
+  font-size: 18px; /* Texto del párrafo */
+}
+
+@media (max-width: 768px) {
+  .about-me {
+    padding: 20px; /* Reducir el padding en pantallas más pequeñas */
+    margin-top: 80px; /* Ajusta el espacio superior para evitar que el header lo tape */
+  }
+
+  .about-me h2 {
+    font-size: 24px; /* Reducir el tamaño del título en pantallas pequeñas */
+  }
+
+  .about-me p {
+    font-size: 16px; /* Ajustar el tamaño del texto */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me h2 {
+    font-size: 20px; /* Título aún más pequeño para móviles muy pequeños */
+  }
+
+  .about-me p {
+    font-size: 14px; /* Texto más compacto en pantallas muy pequeñas */
+  }
+}
