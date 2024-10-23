@@ -12,7 +12,7 @@ const Skills = () => {
           <ul>
             <li><strong>Frontend:</strong> HTML, CSS3, JavaScript, React, React Native, Redux, Expo, SASS, Material UI</li>
             <li><strong>Backend:</strong> Node.js, Express, GraphQL, SQL, postgreSQL, MySQL, MoongoDB, Sequelize</li>
-            <li><strong>Otras herramientas:</strong> GitHub, TypeScript, Native-Base, Prop-Types, Vector-Icons, Circular-Progress-Indicator, Bitbucket, ClickUp</li>
+            <li><strong>Otras herramientas:</strong> GitHub, TypeScript, Native-Base, Prop-Types, Vector-Icons, Circular-Progress-Indicator, Bitbucket, ClickUp, Android Studio, XCode</li>
             <li><strong>Idiomas:</strong> Inglés (Nivel B2)</li>
           </ul>
         </div>
