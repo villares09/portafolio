@@ -8,7 +8,7 @@ const Education = () => {
       <div className="education-item">
         <h3>Universidad Nacional de Tucumán</h3>
         <p>Ingeniería en Informática 2017 - 2024</p>
-        <p>- Estudiante - Incompleto</p>
+        <p>Estudiante Avanzado</p>
       </div>
       <div className="education-item">
         <h3>Instituto Técnico de la UNT</h3>
@@ -16,7 +16,7 @@ const Education = () => {
         <p>Promoción 2016 – Promedio: 7</p>
         <p>Graduado</p>
         <p>Secretario Estudiantil</p>
-        <p>Proyecto de fraccionadora para el Ingenio</p>
+        <p>Proyecto de fraccionadora para el Ingenio Azucarero de Aguilares-Tucumán</p>
       </div>
       <div className="education-item">
         <h3>Full Stack Developer</h3>

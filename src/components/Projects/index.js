@@ -4,22 +4,24 @@ import './styles.css';
 
 const Projects = () => {
   const settings = {
-    dots: true,  // Para mostrar puntos de navegación
-    infinite: true,  // Hacer que el carrusel sea infinito
-    speed: 500,  // Velocidad del cambio entre proyectos
-    slidesToShow: 3,  // Número de slides visibles a la vez
-    slidesToScroll: 1,  // Número de slides a desplazar por scroll
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3, // Tres tarjetas visibles en pantallas grandes
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 2, // Dos tarjetas visibles en pantallas medianas
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1, // Una tarjeta visible en pantallas pequeñas
+          slidesToScroll: 1,
         },
       },
     ],

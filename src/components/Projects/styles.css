@@ -16,6 +16,11 @@
   margin-bottom: 20px; /* Espaciado entre las tarjetas */
 }
 
+.slick-slide {
+  padding: 0 10px; /* Añadir padding a los slides */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
 .project-card h3 {
   font-size: 1.5rem;
   color: #fff;
